@@ -1,1 +1,20 @@
 // _typography.scss
+
+h1 {
+    text-align: center;
+    font-size: 4.1rem;
+    @include small-screen {
+        font-size: 3.5rem;
+    }
+}
+
+h3 {
+    font-size: 2rem;
+    @include small-screen {
+        font-size: 1.5rem;
+    }
+}
+
+p {
+    letter-spacing: 0.1rem;
+}

@@ -1,19 +1,19 @@
 // _mixins.scss
 
-@mixin mobile-only {
-    @media screen and (min-width: map-get($breakpoints, $small)) {
+@mixin small-screen {
+    @media screen and (max-width: map-get($breakpoints, small)) {
         @content;
     }
 }
 
-@mixin tablet-only {
-    @media screen and (min-width: map-get($breakpoints, $medium)) {
+@mixin medium-screen {
+    @media screen and (min-width: map-get($breakpoints, medium)) {
         @content;
     }
 }
 
-@mixin desktop-only {
-    @media screen and (min-width: map-get($breakpoints, $large)) {
+@mixin large-screen {
+    @media screen and (min-width: map-get($breakpoints, large)) {
         @content;
     }
 }
