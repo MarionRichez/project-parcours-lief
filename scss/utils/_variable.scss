@@ -1,7 +1,14 @@
 // _variables.scss
 
 $breakpoints: (
-    mobile: 688px,
-    tablet: 992px,
-    desktop: 1312px
+    small: 688px,
+    medium: 992px,
+    large: 1312px
 );
+
+$margin: calc(50% - 50vw);
+
+$txt-dark: black;
+$txt-light: white;
+
+$bg-color: #606060;

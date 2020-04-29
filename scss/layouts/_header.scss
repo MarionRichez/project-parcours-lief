@@ -1,1 +1,26 @@
 // _header.scss
+
+.header {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    &__img {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        border-bottom: 10px solid black;
+    }
+
+    &__logo {
+        display: block;
+        position: relative;
+        width: 15%;
+        padding: 15px;
+        background-color: white;
+        border-radius: 50%;
+        border: 5px solid black;
+        top: 600px;
+        left: 40%;
+    }
+}
