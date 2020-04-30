@@ -22,8 +22,15 @@
         margin-bottom: 50px;
         letter-spacing: 0.1rem;
         text-align: justify;
+
         @include small-screen {
             font-size: 0.9rem;
+        }
+        @include medium-screen {
+            font-size: 1rem;
+        }
+        @include large-screen {
+            font-size: 1rem;
         }
 
         & p {
@@ -56,10 +63,17 @@
         @include small-screen {
             margin: 80px 0;
         }
+
         img {
             width: 20%;
             @include small-screen {
                 width: 45%;
+            }
+            @include medium-screen {
+                width: 45%;
+            }
+            @include large-screen {
+                width: 20%;
             }
         }
     }
