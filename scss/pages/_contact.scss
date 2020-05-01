@@ -1,1 +1,78 @@
 // _contact.scss
+
+.c-section {
+    @include small-screen {
+        margin-top: 50px;
+    }
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    &__group {
+        width: 30%;
+        @include small-screen {
+            width: 70%;
+            margin-right: 20px;
+        }
+        @include medium-screen {
+            width: 50%;
+        }
+        @include large-screen {
+            width: 30%;
+        }
+    }
+
+    &__label {
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin-left: 20px;
+        @include small-screen {
+            font-size: 1rem;
+        }
+    }
+
+    &__input {
+        margin-top: 5px;
+        width: 100%;
+        border-radius: 1rem;
+        font-size: 1rem;
+        padding: 0.5rem 0.7rem;
+        margin-bottom: 1rem;
+        outline: none;
+        border: 2px solid $btn-color;
+        resize: none;
+        overflow: auto;
+        transition: border-color 400ms, background-color 500ms;
+        &:focus {
+            border-color: $border-color;
+        }
+        &:not(:focus):invalid {
+            background-color: $wrong-color;
+            border-color: $wrong-color;
+            color: $txt-light;
+        }
+
+    }
+
+    &__btn {
+        width: 105%;
+        padding: 10px 7px;
+        border-radius: 1rem;
+        outline: none;
+        border: 2px solid transparent;
+        text-transform: uppercase;
+        font-weight: 800;
+        transition: background-color 350ms, color 250ms;
+        &:hover {
+            background-color: $border-color;
+            color: $txt-light;
+            cursor: pointer;
+        }
+        @include small-screen {
+            padding: 15px 10px;
+        }
+    }
+}
