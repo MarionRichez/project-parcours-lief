@@ -1,1 +1,38 @@
 // _media.scss
+
+.m-section {
+    @include small-screen {
+        margin: 25px 0;
+    }
+
+    &__gallery {
+        margin: 100px 0;
+        @include small-screen {
+            margin: 50px 0;
+        }
+    }
+
+    &__line {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        @include small-screen {
+            flex-wrap: wrap;
+            margin-bottom: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__img {
+        width: 30%;
+        margin: 0 10px;
+        @include small-screen {
+            width: 60%;
+            margin: 10px 0;
+        }
+    }
+}
