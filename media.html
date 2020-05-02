@@ -35,19 +35,68 @@
             <h1>Images</h1>
             <div class="m-section__gallery">
                 <div class="m-section__line">
-                    <img src="./asset/img/(1)_DSC0132.JPG" alt="" class="m-section__img">
-                    <img src="./asset/img/(2)_DSC0163.JPG" alt="" class="m-section__img">
-                    <img src="./asset/img/(3)_DSC0139.JPG" alt="" class="m-section__img">
+                    <img src="./asset/img/(1)_DSC0132.JPG" onclick="openModal(); currentSlide(1)" class="m-section__img">
+                    <img src="./asset/img/(2)_DSC0163.JPG" onclick="openModal(); currentSlide(2)"  class="m-section__img">
+                    <img src="./asset/img/(3)_DSC0139.JPG" onclick="openModal(); currentSlide(3)"  class="m-section__img">
                 </div>
                 <div class="m-section__line">
-                    <img src="./asset/img/(4)_DSC0135.JPG" alt="" class="m-section__img">
-                    <img src="./asset/img/(5)_DSC0195.JPG" alt="" class="m-section__img">
-                    <img src="./asset/img/(6)_DSC0158.JPG" alt="" class="m-section__img">
+                    <img src="./asset/img/(4)_DSC0135.JPG" onclick="openModal(); currentSlide(4)"  class="m-section__img">
+                    <img src="./asset/img/(5)_DSC0195.JPG" onclick="openModal(); currentSlide(5)" class="m-section__img">
+                    <img src="./asset/img/(6)_DSC0158.JPG" onclick="openModal(); currentSlide(6)" class="m-section__img">
                 </div>
                 <div class="m-section__line">
-                    <img src="./asset/img/(7)_DSC0190.JPG" alt="" class="m-section__img">
-                    <img src="./asset/img/(8)_DSC0140.JPG" alt="" class="m-section__img">
-                    <img src="./asset/img/(9)_DSC0225.JPG" alt="" class="m-section__img">
+                    <img src="./asset/img/(7)_DSC0190.JPG" onclick="openModal(); currentSlide(7)" class="m-section__img">
+                    <img src="./asset/img/(8)_DSC0140.JPG" onclick="openModal(); currentSlide(8)" class="m-section__img">
+                    <img src="./asset/img/(9)_DSC0225.JPG" onclick="openModal(); currentSlide(9)" class="m-section__img">
+                </div>
+            </div>
+            <div class="modal-gallery" id="modal-gallery">
+                <div class="modal-gallery__close" onclick="closeModal()">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="modal-gallery__content">
+                    <div class="modal-gallery__slides">
+                        <div class="modal-gallery__nbr">1 / 9</div>
+                        <img src="./asset/img/(1)_DSC0132.JPG" alt="" class="modal-gallery__img">
+                    </div>
+                    <div class="modal-gallery__slides">
+                        <div class="modal-gallery__nbr">2 / 9</div>
+                        <img src="./asset/img/(2)_DSC0163.JPG" alt="" class="modal-gallery__img">
+                    </div>
+                    <div class="modal-gallery__slides">
+                        <div class="modal-gallery__nbr">3 / 9</div>
+                        <img src="./asset/img/(3)_DSC0139.JPG" alt="" class="modal-gallery__img">
+                    </div>
+                    <div class="modal-gallery__slides">
+                        <div class="modal-gallery__nbr">4 / 9</div>
+                        <img src="./asset/img/(4)_DSC0135.JPG" alt="" class="modal-gallery__img">
+                    </div>
+                    <div class="modal-gallery__slides">
+                        <div class="modal-gallery__nbr">5 / 9</div>
+                        <img src="./asset/img/(5)_DSC0195.JPG" alt="" class="modal-gallery__img">
+                    </div>
+                    <div class="modal-gallery__slides">
+                        <div class="modal-gallery__nbr">6 / 9</div>
+                        <img src="./asset/img/(6)_DSC0158.JPG" alt="" class="modal-gallery__img">
+                    </div>
+                    <div class="modal-gallery__slides">
+                        <div class="modal-gallery__nbr">7 / 9</div>
+                        <img src="./asset/img/(7)_DSC0190.JPG" alt="" class="modal-gallery__img">
+                    </div>
+                    <div class="modal-gallery__slides">
+                        <div class="modal-gallery__nbr">8 / 9</div>
+                        <img src="./asset/img/(8)_DSC0140.JPG" alt="" class="modal-gallery__img">
+                    </div>
+                    <div class="modal-gallery__slides">
+                        <div class="modal-gallery__nbr">9 / 9</div>
+                        <img src="./asset/img/(9)_DSC0225.JPG" alt="" class="modal-gallery__img">
+                    </div>
+                    <div class="modal-gallery__prev" onclick="slideNav(-1)">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
+                    <div class="modal-gallery__next" onclick="slideNav(1)">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
                 </div>
             </div>
         </div>

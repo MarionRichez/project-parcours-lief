@@ -47,7 +47,7 @@
         overflow: auto;
         transition: border-color 400ms, background-color 500ms;
         &:focus {
-            border-color: $border-color;
+            border-color: $bg-color;
         }
         &:not(:focus):invalid {
             background-color: $wrong-color;
@@ -67,7 +67,7 @@
         font-weight: 800;
         transition: background-color 350ms, color 250ms;
         &:hover {
-            background-color: $border-color;
+            background-color: $bg-color;
             color: $txt-light;
             cursor: pointer;
         }
