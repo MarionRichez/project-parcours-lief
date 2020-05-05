@@ -2,14 +2,14 @@
 
 header('Location: https://parcours-lief.be');
 
-$mailVIP = "";
-$mailOVH = "";
+$mailVIP = "richez.m95@gmail.com";
+$mailOVH = "richez.m@marion-richez.be";
 $name = $_POST['name'];
 $mail = $_POST['email'];
 $subject = "TFE" . ' ' . $_POST['subject'];
 $msg = $_POST['message'];
 
-ini_set("SMTP", '...');
+ini_set("SMTP", 'smtp.marion-richez.be');
 
 $headers = array (
     "MINE-Version" => 1.0,
