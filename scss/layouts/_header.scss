@@ -10,9 +10,18 @@
         @include small-screen {
             width: 100%;
             border-width: 3px;
+            display: none;
         }
         @include medium-screen {
             border-width: 5px;
+            display: block;
+        }
+    }
+
+    &__small {
+        display: none;
+        @include small-screen {
+            display: block;
         }
     }
 
@@ -28,9 +37,9 @@
         left: 43.9%;
         
         @include small-screen {
-            width: 10%;
-            left: 42.15%;
-            bottom: 55px;
+            width: 35%;
+            left: 28.5%;
+            bottom: 120px;
             border-width: 2px;
         }
         @include medium-screen {
