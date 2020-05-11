@@ -1,37 +1,52 @@
 // _media.scss
 
 .m-section {
-    @include small-screen {
-        margin: 25px 0;
+    margin: 25px 0;
+
+    @include medium-screen {
+       margin: auto;
+    }
+
+    @include large-screen {
+        margin: auto;
     }
 
     &__gallery {
-        margin: 100px 0;
-        @include small-screen {
-            margin: 50px 0;
+        margin: 50px 0;
+
+        @include medium-screen {
+            margin: 100px 0;
+        }
+
+        @include large-screen {
+            margin: 100px 0;
         }
     }
 
     &__line {
         display: flex;
         justify-content: center;
-        margin-bottom: 20px;
-
-        @include small-screen {
-            flex-wrap: wrap;
+        margin-bottom: 0;
+        flex-wrap: wrap;
+        &:last-child {
             margin-bottom: 0;
         }
 
-        &:last-child {
-            margin-bottom: 0;
+        @include medium-screen {
+            margin-bottom: 20px;
+        }
+
+        @include large-screen {
+            margin-bottom: 20px;
         }
     }
 
     &__img {
-        width: 30%;
-        margin: 0 10px;
+        width: 85%;
+        margin: 10px 0;
         transition: box-shadow 350ms;
-        border-radius: 5%;
+        border-radius: 1rem;
+        pointer-events: none;
         &:hover {
             cursor: pointer;
             box-shadow:
@@ -44,9 +59,17 @@
             0 0px 40px rgba(0, 0, 0, 0.128),
             0 0px 80px rgba(0, 0, 0, 0.13);
         }
-        @include small-screen {
-            width: 60%;
-            margin: 10px 0;
+
+        @include medium-screen {
+            width: 30%;
+            margin: 0 10px;
+            pointer-events: all;
+        }
+
+        @include large-screen {
+            width: 30%;
+            margin: 0 10px;
+            pointer-events: all;
         }
     }
 }
@@ -55,7 +78,7 @@
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 125px;
+    padding-top: 150px;
     left: 0;
     top: 0;
     width: 100%;
@@ -63,12 +86,11 @@
     overflow: auto;
     background-color: $bg-color;
     overflow: hidden;
-    @include small-screen {
-        padding-top: 150px;
-    }
+
     @include medium-screen {
         padding-top: 150px;
     }
+
     @include large-screen {
         padding-top: 125px;
     }
@@ -96,24 +118,29 @@
     }
 
     &__slides {
-        width: 60%;
         display: none;
         margin: auto;
-        @include small-screen {
-            width: 76%;
+        
+        @include medium-screen {
+            width: 60%;
+        }
+
+        @include large-screen {
+            width: 60%;
         }
     }
 
     &__nbr {
         color: $txt-light;
         font-size: 1rem;
-        padding: 8px 12px;
+        padding: 15px 20px;
         position: absolute;
         top: 0;
     }
 
     &__img {
         width: 100%;
+        border-radius: 1rem;
     }
 
     &__prev, &__next {

@@ -1,8 +1,14 @@
 // _contact.scss
 
 .c-section {
-    @include small-screen {
-        margin-top: 50px;
+    margin-top: 50px;
+
+    @include medium-screen {
+        margin-top: auto;
+    }
+
+    @include large-screen {
+        margin-top: auto;
     }
 }
 
@@ -12,25 +18,29 @@
     margin-bottom: 50px;
 
     &__group {
-        width: 30%;
-        @include small-screen {
-            width: 70%;
-            margin-right: 20px;
-        }
+        width: 70%;
+        margin-right: 20px;
+        
         @include medium-screen {
             width: 50%;
         }
+
         @include large-screen {
             width: 30%;
         }
     }
 
     &__label {
-        font-size: 1.1rem;
+        font-size: 1rem;
         font-weight: 500;
         margin-left: 20px;
-        @include small-screen {
-            font-size: 1rem;
+
+        @include medium-screen {
+            font-size: 1.1rem;
+        }
+
+        @include large-screen {
+            font-size: 1.1rem;
         }
     }
 
@@ -59,7 +69,7 @@
 
     &__btn {
         width: 105%;
-        padding: 10px 7px;
+        padding: 15px 10px;
         border-radius: 1rem;
         outline: none;
         border: 2px solid transparent;
@@ -71,8 +81,13 @@
             color: $txt-light;
             cursor: pointer;
         }
-        @include small-screen {
-            padding: 15px 10px;
+        
+        @include medium-screen {
+            padding: 10px 7px;
+        }
+
+        @include large-screen {
+            padding: 10px 7px;
         }
     }
 }

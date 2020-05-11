@@ -1,7 +1,6 @@
 // _variables.scss
 
 $breakpoints: (
-    small: 688px,
     medium: 992px,
     large: 1312px
 );
@@ -14,3 +13,5 @@ $txt-light: white;
 $bg-color: #888888;
 $btn-color: #f4f4f4;
 $wrong-color: #c70039;
+
+$word-space: 0.2rem;

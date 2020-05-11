@@ -16,14 +16,19 @@
         position: absolute;
         top: 15px;
         left: 25px;
-        font-size: 3rem;
+        font-size: 2rem;
         color: $txt-light;
         transition: color 500ms;
         &:hover {
             color: $txt-dark;
         }
-        @include small-screen {
-            font-size: 2rem;
+
+        @include medium-screen {
+            font-size: 3rem;
+        }
+
+        @include large-screen {
+            font-size: 3rem;
         }
     }
 
@@ -33,42 +38,62 @@
         text-transform: uppercase;
         display: block;
         transition: 300ms;
-        padding: 25px;
+        font-size: 1rem;
+        padding: 15px;
         color: $txt-light;
         text-align: center;
         transition: color 500ms;
         font-weight: 800;
-        font-size: 1.2rem;
+        
         &:hover {
             color: $txt-dark;
         }
-        @include small-screen {
-            font-size: 1rem;
-            padding: 15px;
+        
+        @include medium-screen {
+            font-size: 1.2rem;
+            padding: 25px;
+        }
+
+        @include large-screen {
+            font-size: 1.2rem;
+            padding: 25px;
         }
     }
 
     &__i {
-        font-size: 3rem;
+        font-size: 2.5rem;
         text-align: center;
         display: block;
         color: $txt-light;
         transition: color 500ms;
-        padding: 25px;
+        padding: 15px;
+
         &:hover {
             color: $txt-dark;
         }
-        @include small-screen {
-            font-size: 2.5rem;
-            padding: 15px;
+
+        @include medium-screen {
+            font-size: 3rem;
+            padding: 25px;
         }
+
+        @include large-screen {
+            font-size: 3rem;
+            padding: 25px;
+        }
+        
     }
 }
 
 .nav-a {
-    margin-top: 50px;
-    @include small-screen {
-        margin-top: 25px;
+    margin-top: 25px;
+
+    @include medium-screen {
+        margin-top: 50px;
+    }
+
+    @include large-screen {
+        margin-top: 50px;
     }
 }
 
@@ -77,14 +102,21 @@
     margin: 15px 0 0 20px;
     cursor: pointer;
     transition: background-color 350ms;
-    font-size: 3rem;
-    color: $bg-color;
+    font-size: 2.5rem;
+    color: $txt-light;
     transition: color 500ms;
+    
     &:hover {
         color: $txt-dark;
     }
-    @include small-screen {
-        font-size: 2.5rem;
-        color: $txt-light;
+
+    @include medium-screen {
+        font-size: 3rem;
+        color: $bg-color;
+    }
+
+    @include large-screen {
+        font-size: 3rem;
+        color: $bg-color;
     }
 }

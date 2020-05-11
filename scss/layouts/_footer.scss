@@ -8,16 +8,7 @@
     & p {
         color: $txt-light;
         text-align: center;
-        padding: 45px 0;
-        @include small-screen {
-            font-size: 1rem;
-            padding: 40px 0;
-        }
-        @include medium-screen {
-            font-size: 1rem;
-        }
-        @include large-screen {
-            font-size: 1rem;
-        }
+        font-size: 1rem;
+        padding: 40px 0;
     }
 }

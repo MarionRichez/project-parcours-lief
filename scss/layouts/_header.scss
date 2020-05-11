@@ -7,52 +7,56 @@
         width: 100%;
         height: auto;
         border-bottom: 10px solid black;
-        @include small-screen {
-            width: 100%;
-            border-width: 3px;
-            display: none;
-        }
+        border-width: 3px;
+        display: none;
+
         @include medium-screen {
+            border-width: 5px;
+            display: block;
+        }
+
+        @include large-screen {
             border-width: 5px;
             display: block;
         }
     }
 
     &__small {
-        display: none;
-        @include small-screen {
-            display: block;
+        display: block;
+
+        @include medium-screen {
+            display: none;
+        }
+        
+        @include large-screen {
+            display: none;
         }
     }
 
     &__logo {
         display: block;
         position: relative;
-        width: 10%;
         padding: 15px;
         background-color: white;
         border-radius: 50%;
-        border: 5px solid black;
-        bottom: 200px;
-        left: 43.9%;
-        
-        @include small-screen {
-            width: 35%;
-            left: 28.5%;
-            bottom: 120px;
-            border-width: 2px;
-        }
+        border: 2px solid black;
+        width: 35%;
+        left: 28.5%;
+        bottom: 110px;
+        border-width: 2px;
+
         @include medium-screen {
-            width: 10%;
-            border-width: 5px;
-            bottom: 80px;
-            left: 43.2%;
+            width: 13%;
+            border-width: 4px;
+            bottom: 90px;
+            left: 42%;
         }
+
         @include large-screen {
-            width: 10%;
+            width: 13%;
             border-width: 5px;
-            bottom: 110px;
-            left: 43.8%;
+            bottom: 120px;
+            left: 42.4%;
         }
     }
 }
