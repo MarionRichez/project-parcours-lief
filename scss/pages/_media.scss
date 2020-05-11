@@ -155,7 +155,10 @@
         font-size: 20px;
         transition: 600ms ease;
         border-radius: 5%;
-        user-select: none;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
         &:hover {
             background-color: $txt-dark;
         }
