@@ -22,6 +22,9 @@
         &:hover {
             color: $txt-dark;
         }
+        @include small-screen {
+            font-size: 2rem;
+        }
 
         @include medium-screen {
             font-size: 3rem;
@@ -48,6 +51,10 @@
         &:hover {
             color: $txt-dark;
         }
+        @include small-screen {
+            font-size: 1rem;
+            padding: 15px;
+        }
         
         @include medium-screen {
             font-size: 1.2rem;
@@ -71,6 +78,10 @@
         &:hover {
             color: $txt-dark;
         }
+        @include small-screen {
+            font-size: 2.5rem;
+            padding: 15px;
+        }
 
         @include medium-screen {
             font-size: 3rem;
@@ -87,6 +98,10 @@
 
 .nav-a {
     margin-top: 25px;
+
+    @include small-screen {
+        margin-top: 25px;
+    }
 
     @include medium-screen {
         margin-top: 50px;
@@ -108,6 +123,11 @@
     
     &:hover {
         color: $txt-dark;
+    }
+
+    @include small-screen {
+        color: $txt-light;
+        font-size: 2.5rem;
     }
 
     @include medium-screen {

@@ -9,6 +9,10 @@
         border-bottom: 10px solid black;
         border-width: 3px;
         display: none;
+        @include small-screen {
+            border-width: 3px;
+            display: none;
+        }
 
         @include medium-screen {
             border-width: 5px;
@@ -23,6 +27,9 @@
 
     &__small {
         display: block;
+        @include small-screen {
+            display: block;
+        }
 
         @include medium-screen {
             display: none;
@@ -41,9 +48,15 @@
         border-radius: 50%;
         border: 2px solid black;
         width: 35%;
-        left: 28.5%;
-        bottom: 110px;
+        left: 27%;
+        bottom: 80px;
         border-width: 2px;
+        @include small-screen {
+            width: 35%;
+            left: 29%;
+            bottom: 150px;
+            border-width: 3px;
+        }
 
         @include medium-screen {
             width: 13%;

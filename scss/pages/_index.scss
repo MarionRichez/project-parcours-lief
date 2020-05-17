@@ -2,6 +2,9 @@
 
 .i-section {
     margin: 0 50px;
+    @include small-screen {
+        margin: 0 50px;
+    }
     
     @include medium-screen {
         margin: 0 200px;
@@ -13,6 +16,10 @@
 
     & h1 {
         margin: 25px 0 60px 0;
+
+        @include small-screen {
+            margin: 25px 0 60px 0;
+        }
         
         @include medium-screen {
             margin: 0 0 100px 0;
@@ -35,6 +42,10 @@
         & p {
             margin-bottom: 15px;
             text-align: justify;
+        }
+
+        @include small-screen {
+            font-size: 0.9rem;
         }
 
         @include medium-screen {
@@ -67,12 +78,20 @@
         text-align: center;
         margin: 80px 0;
 
+        @include small-screen {
+            margin: 80px 0;
+        }
+
         @include medium-screen {
             margin: 100px 0;
         }
 
         img {
             width: 45%;
+
+            @include small-screen {
+                width: 45%;
+            }
 
             @include medium-screen {
                 width: 45%;

@@ -2,6 +2,9 @@
 
 .m-section {
     margin: 25px 0;
+    @include small-screen {
+        margin: 25px 0;
+    }
 
     @include medium-screen {
        margin: auto;
@@ -13,6 +16,9 @@
 
     &__gallery {
         margin: 50px 0;
+        @include small-screen {
+            margin: 50px 0;
+        }
 
         @include medium-screen {
             margin: 100px 0;
@@ -29,6 +35,9 @@
         margin-bottom: 0;
         flex-wrap: wrap;
         &:last-child {
+            margin-bottom: 0;
+        }
+        @include small-screen {
             margin-bottom: 0;
         }
 
@@ -59,6 +68,11 @@
             0 0px 40px rgba(0, 0, 0, 0.128),
             0 0px 80px rgba(0, 0, 0, 0.13);
         }
+        @include small-screen {
+            width: 85%;
+            margin: 10px 0;
+            pointer-events: none;
+        }
 
         @include medium-screen {
             width: 30%;
@@ -86,6 +100,9 @@
     overflow: auto;
     background-color: $bg-color;
     overflow: hidden;
+    @include small-screen {
+        padding-top: 150px;
+    }
 
     @include medium-screen {
         padding-top: 150px;
@@ -120,6 +137,11 @@
     &__slides {
         display: none;
         margin: auto;
+
+        @include small-screen {
+            display: none;
+            margin: auto;
+        }
         
         @include medium-screen {
             width: 60%;
