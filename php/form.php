@@ -5,7 +5,7 @@ header('Location: https://parcours-lief.be');
 $mailVIP = "parcours.lief@gmail.com";
 $name = $_POST['name'];
 $mail = $_POST['email'];
-$subject = "TFE" . ' - ' . $_POST['subject'];
+$subject = "Parcours.Lief" . ' - ' . $_POST['subject'];
 $msg = $_POST['message'];
 
 ini_set("SMTP", 'smtp.marion-richez.be');
@@ -22,7 +22,7 @@ $headers = array (
 );
 
 $CR_Mail = true;
-$CR_Mail = @mail($mailVIP, $subject, $mail, $headers);
+$CR_Mail = @mail($mailVIP, $subject, $msg, $headers);
 if ($CR_Mail === false) {
     echo "### CR_Mail=$CR_Mail - error sending email <br> \n";
 } else {
