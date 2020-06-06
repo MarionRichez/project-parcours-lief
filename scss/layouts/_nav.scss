@@ -67,6 +67,22 @@
         }
     }
 
+    &__load {
+        margin: 10px 15px;
+        border-radius: 5px;
+        background-color: $txt-light;
+        color: $txt-dark;
+        transition: background-color 350ms, color 500ms;
+        &:hover {
+            background-color: $txt-dark;
+            color: $txt-light;
+        }
+
+        & i {
+            font-size: 1.7rem;
+        }
+    }
+
     &__i {
         font-size: 2.5rem;
         text-align: center;
